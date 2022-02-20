@@ -44,7 +44,7 @@ After fork the repository and cloned locally you must do the following things:
     -  Step 4: List files in the repository
 
 ##### Clue: One of the steps must use one GitHub Action.
-##
+
 ## 2. Scheduled workflow
 With this challenge we'll learn how to run our workflow on specific times.
 - Create new workflow file inside workflows folder.
@@ -58,7 +58,7 @@ With this challenge we'll learn how to run our workflow on specific times.
         -  Your name as Body.
 
 ##### Clue: The commands to create issues on GitHub is easy to find using Google :)!
-##
+
 ### 3. Triggered workflow
 - Create new workflow file inside workflows folder.
 - This workflow must be  triggered when an issue is created (opened) on GitHub.
@@ -67,7 +67,7 @@ With this challenge we'll learn how to run our workflow on specific times.
 - The step must edit the existing issue adding "TechWeek" as Label.
 
 ##### Clue: The commands to edit issues on GitHub is easy to find using Google :)!
-##
+
 ### 4. Dependency between Jobs
 - You must edit the master.yml file.
 - This workflow must be splitted on 2 jobs.
