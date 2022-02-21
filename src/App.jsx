@@ -38,12 +38,14 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <Header />
-      <div className="container mt-4">
-        <div className="row">
-          <div className="col-md-12">
-            <CreateTask taskCreated={taskCreated} />
+    <div className="app">
+      <div>
+        <Header />
+        <div className="container mt-4">
+          <div className="row">
+            <div className="col-md-12">
+              <CreateTask taskCreated={taskCreated} />
+            </div>
           </div>
         </div>
       </div>

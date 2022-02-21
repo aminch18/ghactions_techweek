@@ -3,8 +3,13 @@ const STORAGE_KEY = "tasksList.storage";
 const setItemOnStorage = (data) =>
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 
-export const initStorage = () =>
-  localStorage.setItem(STORAGE_KEY, JSON.stringify([]));
+export const initStorage = () => {
+  const data = getAllTasks();
+  
+  if (!data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([]));
+  }
+};
 
 export const getAllTasks = () => JSON.parse(localStorage.getItem(STORAGE_KEY));
 
