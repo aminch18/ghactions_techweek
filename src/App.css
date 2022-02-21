@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.mrgnbtm {
+  margin-top: 20px;
+}
+
+.app {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .btncenter {
   text-align: center;
 }
