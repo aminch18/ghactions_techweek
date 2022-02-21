@@ -62,11 +62,6 @@ With this challenge we'll learn how to run our workflow on specific times.
 
 ##### Clues: Find how to extract current datetime on bash. Find how to define an output for one step. The commands to create issues on GitHub is easy to find using Google.
 
-<<<<<<< HEAD
-##### Clue: The commands to create issues on GitHub is easy to find using Google :)!
-
-=======
->>>>>>> master
 ### 3. Triggered workflow
 - Create new workflow file inside workflows folder.
 - This workflow must be  triggered when an issue is created (opened) on GitHub.
