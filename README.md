@@ -77,10 +77,10 @@ With this challenge we'll learn how to run our workflow on specific times.
 ##### Clue: The commands to edit issues on GitHub is easy to find using Google :)!
 
 ### 4. Dependency between Jobs
-- You must edit the master.yml file.
+- Create new workflow file inside worfklows folder.
 - This workflow must be splitted on 2 jobs.
-    - 1st: Apply continuous integrations. (Build)
-    - 2nd: Apply continuous deployment.   (Show files inside the built code.)
+    - 1st: Apply continuous integrations. (Build => 4 steps)
+    - 2nd: Apply continuous deployment.   (Show files inside the built code => 2 steps)
 - All the jobs must run on ubuntu-latest version.
 - The 2nd job needs the 1st one in order to use the result of the 1st one.
 - You will need to use 2 github actions more one for each job in order to upload and download the built it code.
