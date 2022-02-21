@@ -41,30 +41,38 @@ After fork the repository and cloned locally you must do the following things:
     -  Step 1: Write the name of the event with any fancy sentence.
     -  Step 2: Write the name of the repository with any fancy sentence.
     -  Step 3: Load your repository on your agent runner.
-    -  Step 4: List files in the repository
+    -  Step 4: List files in the repository recursively.
 
 ##### Clue: One of the steps must use one GitHub Action.
 
 ## 2. Scheduled workflow
 With this challenge we'll learn how to run our workflow on specific times.
 - Create new workflow file inside workflows folder.
-- This workflow must be scheduled.
-- The workflow must has got a single job with 1 step.
+- This workflow must be scheduled and with the possibility to be executed manually.
+- The workflow must has got a single job with 3 step.
 - The workflow must run every 5 minutes.
 - All the steps must run on ubuntu-latest version.
-- The step must create an issue on GiHhub using git hub commands (similar to git commands).
-    -  The issue created must has got:
-        -  Current date as Title.
-        -  Your name as Body.
+- Steps responsability:
+    -  Step 1: Get current date and create an output of the step with the date.
+    -  Step 2: Checkout repository.
+    -  Step 3: The step must create an issue on GiHhub using git hub commands (similar to git   commands).
+-  The issue created must has got:
+    -  Current date as Title.
+    -  Your name as Body, feel free to write what you want.
 
+##### Clues: Find how to extract current datetime on bash. Find how to define an output for one step. The commands to create issues on GitHub is easy to find using Google.
+
+<<<<<<< HEAD
 ##### Clue: The commands to create issues on GitHub is easy to find using Google :)!
 
+=======
+>>>>>>> master
 ### 3. Triggered workflow
 - Create new workflow file inside workflows folder.
 - This workflow must be  triggered when an issue is created (opened) on GitHub.
-- The workflow must has got a single job with 1 step.
+- The workflow must has got a single job with 2 step.
 - All the steps must run on ubuntu-latest version.
-- The step must edit the existing issue adding "TechWeek" as Label.
+- The step must edit the existing issue adding "good first issue" as Label, if you go to issues section on your repository you can check different labels.
 
 ##### Clue: The commands to edit issues on GitHub is easy to find using Google :)!
 
@@ -72,7 +80,7 @@ With this challenge we'll learn how to run our workflow on specific times.
 - You must edit the master.yml file.
 - This workflow must be splitted on 2 jobs.
     - 1st: Apply continuous integrations. (Build)
-    - 2nd: Apply continuous deployment.   (Deploy)
+    - 2nd: Apply continuous deployment.   (Show files inside the built code.)
 - All the jobs must run on ubuntu-latest version.
 - The 2nd job needs the 1st one in order to use the result of the 1st one.
 - You will need to use 2 github actions more one for each job in order to upload and download the built it code.
