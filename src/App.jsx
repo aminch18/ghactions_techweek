@@ -1,8 +1,8 @@
 import { initStorage, getAllTasks, deleteTask } from "./services/tasksServices";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { CreateTask } from "./components/CreateTask";
 import { TasksTable } from "./components/TasksTable";
-import { CreateTask } from "./components/CreateTask";
 import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
