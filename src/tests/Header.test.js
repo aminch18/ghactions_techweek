@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import React from "react";
 
 test("render header component renders static content", () => {
-  const expectedContent = "Code Noobs Simple Web App ⚡";
+  const expectedContent = "Simple Web App ⚡";
   const component = render(<Header />);
   component.getByText(expectedContent);
 });
