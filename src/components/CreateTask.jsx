@@ -4,7 +4,11 @@ import { createTask } from "../services/tasksServices";
 import { v4 as uuidv4 } from "uuid";
 
 export const CreateTask = ({ taskCreated }) => {
+<<<<<<< HEAD
   const { register, handleSubmit, errors } = useForm();
+=======
+  const { register, handleSubmit } = useForm();
+>>>>>>> master
 
   const onSubmit = (data, e) => {
     const task = { id: uuidv4(), ...data };
