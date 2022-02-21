@@ -28,7 +28,11 @@ const App = () => {
     setTaskEdited(false);
   }, [fetchData, numberOfTasks, isTaskEdited]);
 
+<<<<<<< HEAD
   const showEditModalHandler = (data) => setTaskEdited(data.isEdited);
+=======
+  const taskEdited = (data) => setTaskEdited(data.isEdited);
+>>>>>>> feature/editableTasks
 
   const taskCreated = () => setNumberOfTasks(numberOfTasks + 1);
 

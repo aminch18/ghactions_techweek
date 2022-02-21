@@ -29,7 +29,6 @@ npm run test
 
 # Challenges
 ##### This section shows the challenges you should do, in order to understand the different topics explained in the presentation. You will realise some challenges needs to research information about GitHub workflow statements that were not showed on the presentation.
-
 #####  Therefore, you must use this documentation in order to find what you need to achieve the challenge:
 #### https://docs.github.com/es/actions/quickstart
 ## 1. Manual trigger
@@ -63,6 +62,11 @@ With this challenge we'll learn how to run our workflow on specific times.
 
 ##### Clues: Find how to extract current datetime on bash. Find how to define an output for one step. The commands to create issues on GitHub is easy to find using Google.
 
+<<<<<<< HEAD
+##### Clue: The commands to create issues on GitHub is easy to find using Google :)!
+
+=======
+>>>>>>> master
 ### 3. Triggered workflow
 - Create new workflow file inside workflows folder.
 - This workflow must be  triggered when an issue is created (opened) on GitHub.

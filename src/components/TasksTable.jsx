@@ -10,6 +10,7 @@ export const TasksTable = ({ tasks, showEditModalHandler, deleteHandler }) => {
       <th>CreatedBy</th>
       <th>Creation date</th>
       <th>State</th>
+      <th>Actions</th>
     </tr>
   );
 
