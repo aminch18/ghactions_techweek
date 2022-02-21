@@ -8,7 +8,8 @@ env:
   PACKAGE_PATH: ./build
   NODE_VERSION: 14.x
   ARTIFACT_NAME: react-webapp
-
+  ARTIFACT_PATH: ${{ github.workspace }}/react-webapp
+  
 jobs:
   build:
     name: Build
@@ -27,5 +28,29 @@ jobs:
       - name: Install, Build & Tests 🔧✅
         run: |
           npm install
-          npm run-script build 
-          npm run-script test
+          npm run build 
+          npm run test
+
+      - name: Upload Built WebApp ⬆
+        uses: actions/upload-artifact@v1
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ${{ env.PACKAGE_PATH }}
+          
+  deploy:
+    needs: build
+    name: Deploy on Gh-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Built WebApp ⬇
+        uses: actions/download-artifact@v1
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir:  ${{ env.ARTIFACT_NAME }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
