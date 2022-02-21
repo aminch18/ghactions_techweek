@@ -1,8 +1,5 @@
 import { render } from "@testing-library/react";
-<<<<<<< HEAD
 import { fireEvent } from "@testing-library/dom";
-=======
->>>>>>> master
 import { TasksTable } from "../components/TasksTable";
 import React from "react";
 import { deleteTask } from "../services/tasksServices";
