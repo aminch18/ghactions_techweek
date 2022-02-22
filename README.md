@@ -31,6 +31,16 @@ npm run test
 ##### This section shows the challenges you should do, in order to understand the different topics explained in the presentation. You will realise some challenges needs to research information about GitHub workflow statements that were not showed on the presentation.
 #####  Therefore, you must use this documentation in order to find what you need to achieve the challenge:
 #### https://docs.github.com/es/actions/quickstart
+
+## Previous steps after the fork:
+Run locally the following commands in order to have all the branches synchronized locally.
+
+```sh
+git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+```
+
 ## 1. Manual trigger
 After fork the repository and cloned locally you must do the following things:
 - Create new workflow file inside workflows folder.
