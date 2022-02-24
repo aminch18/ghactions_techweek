@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ghactions_techweek/static/css/main.ba14ad09.css",
+    "main.js": "/ghactions_techweek/static/js/main.83705dd8.js",
+    "index.html": "/ghactions_techweek/index.html",
+    "main.ba14ad09.css.map": "/ghactions_techweek/static/css/main.ba14ad09.css.map",
+    "main.83705dd8.js.map": "/ghactions_techweek/static/js/main.83705dd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba14ad09.css",
+    "static/js/main.83705dd8.js"
+  ]
+}
