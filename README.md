@@ -29,7 +29,6 @@ npm run test
 
 # Challenges
 ##### This section shows the challenges you should do, in order to understand the different topics explained in the presentation. You will realise some challenges needs to research information about GitHub workflow statements that were not showed on the presentation.
-
 #####  Therefore, you must use this documentation in order to find what you need to achieve the challenge:
 #### https://docs.github.com/es/actions/quickstart
 
